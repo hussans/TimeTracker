@@ -1,0 +1,34 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-container .card-content {
+    background-color: hsl(235, 46%, 20%);
+    gap: 1em;
+    color: white;
+}
+
+.profile-card:nth-child(1) {
+    grid-row: 1 / span 2;
+
+    background-color: hsl(246, 80%, 60%);
+}
+
+.profile-pic {
+    width: 100px;
+    border: 5px solid white;
+}
+
+.card-exercise {
+    grid-column: 2 / 3;
+}
+
+
