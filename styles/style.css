@@ -5,7 +5,14 @@
     src: url(../fonts/Rubik/Rubik-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Rubik Light';
+    src: url(../fonts/Rubik/Rubik-Light.ttf);
+}
+
 /* Font End --- --- --- */
+
+/* Common Body CSS --- --- --- */
 
 body {
     background-color: hsl(226, 43%, 10%);
@@ -13,67 +20,11 @@ body {
     padding: 0;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
-
-    margin-left: 150px;
-    margin-right: 150px;
-
-    grid-gap: 1em;
-}
-
-.profile-card {
-    grid-row: 1 / span 2;
-}
-
-.profile-banner {
-    background-color: hsl(246, 80%, 60%);
-    border-radius: 15px;
-}
-
-/* Testing */
-
-.card-play {
-    display: grid;
-    grid-template-rows: 3rem 1fr;
-    grid-row: 2;
-    grid-column: 2 / 3;
-
-    background-color: hsl(195, 74%, 62%);
-    border-radius: 15px;
-
-    overflow: hidden;
-
-}
-
-.card-play .card-content {
-    font-family: Rubik, Arial, Helvetica, sans-serif;
-    padding: 15px 35px;
-    background-color: hsl(235, 46%, 20%);
-    color: white;
-    border-radius: 15px;
-
-}
-
-.play-icon {
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
-    margin-top: -5px;
-}
-
-.play-icon img {
-    width: 5rem;
-    height: 5rem;
-}
-
 .card-subtitle {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .card-subtitle div {
@@ -90,15 +41,307 @@ body {
 }
 
 .card-hours {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 15px;
     margin-bottom: 0;
 }
 
 .card-footer {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
     color: #BBC0FF;
-    font-weight: 300;
+    font-weight: 200;
+    margin-top: 5px;
 }
+
+.icon {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.icon img {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Common Body CSS End --- --- --- */
+
+
+/* Card Profile --- --- --- */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+
+    grid-gap: 2em;
+}
+
+.profile-card {
+    grid-row: 1 / span 2;
+
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+
+.profile-card .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    width: 5rem;
+    border: 3.5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .250);
+
+    margin-left: 30px;
+    margin-top: 40px;
+
+
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #BBC0FF;
+
+    display: flex;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.card-content a:hover {
+    color: white;
+}
+
+.profile-banner {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+}
+
+.profile-banner h1 {
+    margin: 0;
+    padding: 35px 35px 60px 35px ;
+
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: 2.7rem;
+    font-weight: 300;
+    color: white;
+
+}
+
+.profile-banner span {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 650;
+    color: #BBC0FF;
+
+}
+
+/* Card Profile End --- --- --- */
+
+/* Card Work --- --- --- */
+
+.card-work {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    background: linear-gradient(to bottom, #ff8c66, #ff8c66 50%, #ff8c66 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-work .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.card-work .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Work End --- --- --- */
+
+
+/* Card Play --- --- --- */
+
+.card-play {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 1;
+    grid-column: 3 / 4;
+    background: linear-gradient(to bottom, #56c2e6, #56c2e6 50%, #56c2e6 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-play .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.card-play .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Play End --- --- --- */
+
+/* Card Study --- --- --- */
+
+.card-study {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 1;
+    grid-column: 4 / 5;
+    background: linear-gradient(to bottom, #ff5c7c, #ff5c7c 50%, #ff5c7c 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-study .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.card-study .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Study End --- --- --- */
+
+/* Card Exercise --- --- --- */
+
+.card-exercise {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 2;
+    grid-column: 2 / 3;
+    background: linear-gradient(to bottom, #4acf81, #4acf81 50%, #4acf81 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-exercise .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.exercise-icon img {
+    width: 5rem;
+    height: 4rem;
+}
+
+.card-exercise .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Exercise End --- --- --- */
+
+/* Card Social --- --- --- */
+
+.card-social {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 2;
+    grid-column: 3 / 4;
+    background: linear-gradient(to bottom, #7536d3, #7536d3 50%, #7536d3 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-social .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+.social-icon img {
+    width: 30%;
+    height: 7rem;
+}
+
+.card-social .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Social End --- --- --- */
+
+/* Card Self Care --- --- --- */
+
+.card-selfcare {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    grid-row: 2;
+    grid-column: 4 / 5;
+    background: linear-gradient(to bottom, #f1c65b, #f1c65b 50%, #f1c65b 75%, #333 75%);
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.card-selfcare .card-content {
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    padding: 15px 35px;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 15px;
+}
+
+.selfcare-icon img {
+    width: 25%;
+    height: 4rem;
+}
+
+.card-selfcare .card-content:hover {
+    background-color: #2c326e;
+    cursor: pointer;
+}
+
+/* Card Self Care End --- --- --- */
+
+
+
+
 
 
