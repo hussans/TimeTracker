@@ -107,7 +107,6 @@ body {
     margin-left: 30px;
     margin-top: 40px;
 
-
 }
 
 .card-content a {
@@ -144,7 +143,6 @@ body {
     font-size: 1rem;
     font-weight: 650;
     color: #BBC0FF;
-
 }
 
 /* Card Profile End --- --- --- */
@@ -339,6 +337,174 @@ body {
 }
 
 /* Card Self Care End --- --- --- */
+
+/* Responsiveness --- --- --- */
+
+/* Default Dimensions - 1458 x 901 */
+
+@media screen and (max-width: 1207px ){
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 4;
+        grid-gap: 2em;
+    }
+
+    .card-play {
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-row: 3;
+        grid-column: 1 / 2;
+    }
+
+    .card-study {
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-row: 3;
+        grid-column: 2 / 3;
+    }
+
+    .card-social {
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-row: 4;
+        grid-column: 1 / 2;
+    }
+
+    .card-selfcare {
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        grid-row: 4;
+        grid-column: 2 / 3;
+    }
+
+    @media screen and (max-width: 850px) {
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 7;
+            grid-gap: 2em;
+        }
+
+        .profile-card {
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }
+
+        .profile-pic {
+            width: 5rem;
+            height: 100%;
+        }
+
+        .profile-card .card-content {
+            display: flex;
+            justify-content: center;
+        } 
+
+        .card-content a {
+            display: inline-block;
+        }
+
+        .name-br {
+            display: none;
+        }
+
+        .profile-banner {
+            display: flex;
+        }
+
+        .profile-banner h1 {
+            font-size: 2.1rem;
+            padding-bottom: 50px;
+        }
+
+        .card-work {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 2;
+            grid-column: 1 / 2;
+        }
+
+        .card-text {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .card-footer {
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            font-size: 1.2rem;
+        }
+    
+        .card-play {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 3;
+            grid-column: 1 / 2;
+        }
+    
+        .card-study {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 4;
+            grid-column: 1 / 2;
+        }
+
+        .card-exercise {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 5;
+            grid-column: 1 / 2;
+        }
+    
+        .card-social {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 6;
+            grid-column: 1 / 2;
+        }
+    
+        .card-selfcare {
+            display: grid;
+            grid-template-rows: 3rem 1fr;
+            grid-row: 7;
+            grid-column: 1 / 2;
+        }
+        
+    }
+
+    @media screen and (max-width: 690px){
+
+        .card-container {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 150px;
+        }
+    }
+
+    @media screen and (max-width: 485px){
+
+        .card-container {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 150px;
+        }
+
+        .card-hours {
+            font-size: 3rem;
+        }
+        
+        .card-footer {
+            font-size: 1rem;
+        }
+    }
+
+}
 
 
 
