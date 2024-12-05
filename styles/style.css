@@ -40,6 +40,10 @@ body {
     margin: 1.5px;
 }
 
+.dot-container:hover .dot {
+    background-color: white;
+}
+
 .card-hours {
     font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
@@ -116,6 +120,10 @@ body {
     display: flex;
     padding: 10px;
     font-size: 1.1rem;
+}
+
+.card-content a.selected {
+    color: white;
 }
 
 .card-content a:hover {
@@ -438,7 +446,7 @@ body {
             display: flex;
             align-items: center;
 
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     
         .card-play {
@@ -485,6 +493,10 @@ body {
             margin-right: 50px;
             margin-top: 150px;
         }
+
+        .card-footer {
+            font-size: 1rem;
+        }
     }
 
     @media screen and (max-width: 485px){
@@ -505,9 +517,3 @@ body {
     }
 
 }
-
-
-
-
-
-
