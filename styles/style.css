@@ -84,6 +84,7 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 150px;
+    margin-bottom: 150px;
 
     grid-gap: 2em;
 }
